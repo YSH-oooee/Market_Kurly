@@ -60,7 +60,7 @@
 				<%=idto.getItem_stock() %>
 			</td>
 			<td width="50">		<!-- 이미지 -->
-				<img alt="" src="<%=idto.getItem_image() %>" height="50">
+				<img alt="" src="img/<%=idto.getItem_image() %>" height="50">
 			</td>
 			<td width="200">		<!-- 상품정보 -->
 				<%=idto.getItem_info() %>

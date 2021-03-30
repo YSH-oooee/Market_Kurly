@@ -13,7 +13,7 @@
 	<%
 		request.setCharacterEncoding("utf-8");
 	
-		int number = Integer.parseInt(request.getParameter("number"));
+		int number = Integer.parseInt(request.getParameter("num"));
 		
 		boardDTO bdto = boardDAO.getInstance().getOneBoard(number);
 	%>
@@ -35,14 +35,14 @@
 				<td width="180"><%=bdto.getReg_date() %></td>
 			</tr>
 			
-			<tr height="40" align="center">
-				<td width="120">제목</td>
+			<tr height="40">
+				<td width="120" align="center">제목</td>
 				<td colspan="3">
-					<input type="text" value="<%=bdto.getTitle() %>" size="30">
+					<input type="text" value="<%=bdto.getTitle() %>" size="50">
 				</td>
 			</tr>
-			<tr height="40" align="center">
-				<td width="120">글내용</td>
+			<tr height="40">
+				<td width="120" align="center">글내용</td>
 				<td colspan="3">
 					<textarea rows="10" cols="50" name="content">
 						<%=bdto.getContent() %>

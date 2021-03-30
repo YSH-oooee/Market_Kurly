@@ -53,9 +53,11 @@
 	%>
 					<%=name%>님 &nbsp;
 					<img alt="" src="img/top1.jpg"> &nbsp;
-					<a href="00_shopMain.jsp?center=28_itemInfoUpdate.jsp" style="text-decoration: none">상품수정</a> &nbsp;
+					<a href="00_shopMain.jsp?center=28_itemInfoUpdate.jsp" style="text-decoration: none">상품관리</a> &nbsp;
 					<img alt="" src="img/top1.jpg"> &nbsp;
 					<a href="00_shopMain.jsp?center=34_checkAllOrder.jsp" style="text-decoration: none">주문확인</a> &nbsp;
+					<img alt="" src="img/top1.jpg"> &nbsp;
+					<a href="00_shopMain.jsp?center=45_showUserList.jsp" style="text-decoration: none">회원관리</a> &nbsp;
 	<%					
 				}				
 	%>

@@ -117,6 +117,21 @@ public class managerDAO {
 			pstmt.setInt(1, item_number);
 			pstmt.executeUpdate();
 			
+			System.out.println(item_number + "번 상품이 삭제되었습니다.");
+			
+			pstmt = conn.prepareStatement("SELECT * FROM ITEM WHERE ITEM_NUMBER > ?");
+			pstmt.setInt(1, item_number);
+			
+			rs = pstmt.executeQuery();
+			
+			if (rs.next()) {
+				pstmt = conn.prepareStatement("update item set item_number = item_number-1 where item_number > ?");
+				pstmt.setInt(1, item_number);
+				pstmt.executeUpdate();
+				
+				System.out.println("상품번호가 수정되었습니다.");
+			}
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
