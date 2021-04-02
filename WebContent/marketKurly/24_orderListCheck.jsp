@@ -58,7 +58,7 @@
 		for(int i = 0; i < buylist.size(); i++) {
 			buyDTO bdto = buylist.get(i);
 	%>
-			<tr height="50">
+			<tr height="50" align="center">
 				<td width="50">
 					<font size="2"><%=++number%></font>
 				</td>

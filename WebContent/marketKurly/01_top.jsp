@@ -1,6 +1,6 @@
 <%@page import="market_Kurly.managerDAO"%>
-<%@page import="market_Kurly.managerDTO"%>
 <%@page import="market_Kurly.buyDAO"%>
+<%@page import="market_Kurly.managerDTO"%>
 <%@page import="market_Kurly.customerDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
